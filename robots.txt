@@ -1,0 +1,4 @@
+User-agent: *
+Allow: / 
+Disallow: /luppi 
+Sitemap: http://www.conexaosambashow.com.br/sitemap.xml
