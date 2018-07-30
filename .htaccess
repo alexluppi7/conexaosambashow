@@ -1,7 +1,7 @@
 <Files ~ "^\.(htaccess|htpasswd)$">
 deny from all
 </Files>
-Options Indexes
+Options -Indexes
 ErrorDocument 400 ops.html
 ErrorDocument 403 ops.html
 ErrorDocument 404 ops.html
