@@ -723,3 +723,52 @@ footer img.cliente{
     margin-top: 20px;
 
 }
+
+/* Botão WhatsApp*/
+
+a.WhatsappButton{
+    width: 300px;
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10000;
+}
+
+a.WhatsappButton img{
+    width: 100%;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.5;
+}
+
+a.WhatsappButton img:hover{
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    }
+
+@media (max-width:767px){
+    a.WhatsappButton{
+        width: 50px;
+        height: 50px;
+        display: block;
+        position: fixed;
+        bottom: 70px;
+        right: 7px;
+        z-index: 10000;
+        background: url('../img/whats-button-mini.png') 0px no-repeat;
+        background-size: 50px;
+    }
+     a.WhatsappButton img{
+        display: none;
+     }
+
+
+}
