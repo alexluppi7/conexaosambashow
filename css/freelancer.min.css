@@ -67,6 +67,22 @@ hr.star-primary:after{
      margin:0 auto
 }
 
+.btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #ffdd00;
+    background-color: #000;
+    border-color: #ffdd00;
+    box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
+ 
+}
+
+.btn-success:not([disabled]):not(.disabled).active, .btn-success:not([disabled]):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color: #ffdd00;
+    background-color: #000;
+    border-color: #ffdd00;
+    box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
+ 
+}
+
 section{
      padding:100px 0
 }
@@ -176,12 +192,16 @@ section.first{
 }
 
 @media (min-width:992px){
+
+
+
      #mainNav{
-     padding-top:25px;
-     padding-bottom:25px;
+     padding-top: 15px;
+     padding-bottom: 15px;
      -webkit-transition:padding-top .3s,padding-bottom .3s;
      -moz-transition:padding-top .3s,padding-bottom .3s;
-     transition:padding-top .3s,padding-bottom .3s
+     transition:padding-top .3s,padding-bottom .3s;
+ 
 }
 
 #mainNav .navbar-brand{
@@ -212,6 +232,7 @@ section.first{
 }
 
 
+
 }
 
 header.masthead{
@@ -238,7 +259,7 @@ header.masthead{
 
 header.masthead img{
      display:block;
-     margin:0 auto 3.5em;
+     margin:0 auto 2em;
 }
 
 header.masthead .intro-text .name{
@@ -332,9 +353,7 @@ header.masthead .intro-text .skills{
      margin:0
 }
 
-#portfolio *{
-     z-index:2
-}
+
 
 @media (min-width:767px){
      #portfolio .portfolio-item{
@@ -354,7 +373,7 @@ header.masthead .intro-text .skills{
      border-radius:0;
      background-clip:border-box;
      -webkit-box-shadow:none;
-     box-shadow:none
+     box-shadow:none;
 }
 
 .portfolio-modal .modal-dialog .modal-content{
@@ -414,6 +433,34 @@ header.masthead .intro-text .skills{
 .portfolio-modal .modal-backdrop{
      display:none;
      opacity:0
+}
+
+.btn-galeria {
+     width: 800px ;
+    height: 60px;
+    margin: 20px auto;
+    padding: 10px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    border:  2px solid #fd0 !important;
+    box-shadow: 0px 0px 10px #333;
+    
+}
+.btn-galeria i{
+    margin: 0 15px;
+    font-size: 1.4em
+}
+
+.btn-galeria:hover {
+    background-color: #fd0 !important;
+    color: #000 !important;
+}
+@media (max-width:767px){
+
+.btn-galeria {
+    margin: 20px 10px;
+    background-size: 90% auto;
+    }
 }
 
 /*###### Planos ######*/
@@ -490,6 +537,33 @@ header.masthead .intro-text .skills{
      color: #FD0;
 
      }
+
+#PagSeguro {
+    width: 800px ;
+    height: 120px;
+    margin: 20px auto;
+    background-image: url('/img/compra-segura-com-pagseguro.png');
+    background-repeat: no-repeat;
+    background-size: auto 100px;
+    background-position: center center;
+    border: 2px solid #FD0;
+    border-radius: 20px;
+
+}
+
+@media (max-width:767px){
+
+#PagSeguro {
+    margin: 20px 10px 0 10px;
+    background-size: 90% auto;
+    }
+}
+
+
+
+
+
+
 /*####### CONTATO ###### */
 
 
@@ -585,6 +659,14 @@ footer img.cliente{
      margin-bottom: 8px;
 }
 
+footer img.parceiros{
+     padding: 2px;
+     border: 1px solid #FD0;
+     margin-bottom: 8px;
+     width: 190px;
+
+}
+
 .btn-outline{
      font-size:20px;
      margin-top:15px;
@@ -598,6 +680,7 @@ footer img.cliente{
      color:#fd0;
      border-color:#222;
      background-color:#222;
+    box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-primary{
@@ -611,24 +694,28 @@ footer img.cliente{
      color:#fd0;
      border-color:#222;
      background-color:#222;
+    box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-primary:hover{
      color:#fd0;
      border-color:#222;
      background-color:#222;
+    box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-primary.active,.btn-primary:active,.open>.btn-primary.dropdown-toggle{
      color:#fff;
      border-color:#161f29;
-     background-color:#1a252f
+     background-color:#1a252f;
+       box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-primary.active.focus,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active.focus,.btn-primary:active:focus,.btn-primary:active:hover,.open>.btn-primary.dropdown-toggle.focus,.open>.btn-primary.dropdown-toggle:focus,.open>.btn-primary.dropdown-toggle:hover{
      color:#fd0;
      border-color:#222;
      background-color:#222;
+    box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-primary.active,.btn-primary:active,.open>.btn-primary.dropdown-toggle{
@@ -651,30 +738,35 @@ footer img.cliente{
      border-color:#222;
      background-color:#222;
 	 cursor: pointer;
+    box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-success.focus,.btn-success:focus{
      color:#222;
      border-color:#fd0;
-     background-color:#fd0
+     background-color:#fd0;
+        box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-success:hover{
      color:#222;
      border-color:#fd0;
-     background-color:#fd0
+     background-color:#fd0;
+        box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-success.active,.btn-success:active,.open>.btn-success.dropdown-toggle{
      color:#222;
      border-color:#fd0;
-     background-color:#fd0
+     background-color:#fd0;
+        box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 }
 
 .btn-success.active.focus,.btn-success.active:focus,.btn-success.active:hover,.btn-success:active.focus,.btn-success:active:focus,.btn-success:active:hover,.open>.btn-success.dropdown-toggle.focus,.open>.btn-success.dropdown-toggle:focus,.open>.btn-success.dropdown-toggle:hover{
      color:#222;
      border-color:#fd0;
-     background-color:#fd0
+     background-color:#fd0;
+        box-shadow: 0 0 0 0.2rem rgba(225,221,0,.5);
 
 }
 
@@ -692,7 +784,7 @@ footer img.cliente{
      background-color:#fff
 }
 
-.btn-social{
+.btn-social, .btn-social-top{
      font-size:20px;
      line-height:45px;
      display:inline-block;
@@ -703,15 +795,20 @@ footer img.cliente{
      border-radius:100%
 }
 
-.btn-social:hover{
+.btn-social:hover, .btn-social-top:hover{
      background-color: #fd0;
      border:2px solid #fd0;
      color: #222;
 }
 
-.btn.active,.btn:active,.btn:focus{
-     outline:0
-}
+
+
+.btn-social-top{
+     background-color: #111;
+     text-shadow: none;
+ }
+
+
 
 /* Depoimentos */
 
@@ -771,4 +868,17 @@ a.WhatsappButton img:hover{
      }
 
 
+}
+
+
+/* ############ gallrery ################ */
+
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
